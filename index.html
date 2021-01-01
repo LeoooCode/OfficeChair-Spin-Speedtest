@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <title>Spin Speedtest</title>
+</head>
+
+<body>
+  <section id="main">
+    <main>
+      <div id="canvasParent">
+        <canvas id="speedCanvas" width="1000" height="1000">
+        </canvas>
+        <div id="canvasOverlay">
+          <button class="mdc-button mdc-button--raised">
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">speed</i>
+            <span class="mdc-button__label">Start</span>
+          </button>
+        </div>
+      </div>
+      <article>
+        <h1>Office chair spin speedtest</h1>
+        <p>The modern world of technology now finally allows us to measure how fast you and your colleges can spin in an
+          office
+          chair. Get ready to settle your competitons with this scientific method.</p>
+      </article>
+    </main>
+
+    <div id="moreIndicator">More <span class="material-icons">expand_more</span></div>
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>
