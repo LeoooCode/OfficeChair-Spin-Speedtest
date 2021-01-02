@@ -25,7 +25,13 @@
         <canvas id="speedCanvas" width="1000" height="1000">
         </canvas>
         <div id="canvasOverlay">
-          <button class="mdc-button mdc-button--raised">
+          <h2 id="fatalError" style="display: none;">
+            <span class="material-icons">error_outline</span> <br> Access to your devices gyro-sonsor failed!
+          </h2>
+          <h1 id="mainNumber" style="display: none;">
+            <span id="mainNumberText"></span><span class="rpm">rpm</span>
+          </h1>
+          <button class="mdc-button mdc-button--raised" id="playButton" onclick="play()">
             <div class="mdc-button__ripple"></div>
             <i class="material-icons mdc-button__icon" aria-hidden="true">speed</i>
             <span class="mdc-button__label">Start</span>
