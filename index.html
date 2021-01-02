@@ -36,6 +36,11 @@
             <i class="material-icons mdc-button__icon" aria-hidden="true">speed</i>
             <span class="mdc-button__label">Start</span>
           </button>
+          <button class="mdc-button mdc-button--raised" id="resetButton" onclick="reset()" style="display: none;">
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">reply</i>
+            <span class="mdc-button__label">Reset</span>
+          </button>
         </div>
       </div>
       <article>
@@ -47,6 +52,38 @@
     </main>
 
     <div id="moreIndicator">More <span class="material-icons">expand_more</span></div>
+
+    <button class="mdc-fab" id="helpFab" aria-label="Help" onclick="helpDialog.open()">
+      <div class="mdc-fab__ripple"></div>
+      <span class="mdc-fab__icon">?</span>
+    </button>
+
+    <div class="mdc-dialog" id="helpDialog">
+      <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="help-dialog"
+          aria-describedby="how the system works">
+          <h2 class="mdc-dialog__title">How the speedtest works</h2>
+          <div class="mdc-dialog__content">
+            <ol>
+              <li>Sit down in an office chair (also works if you are not in an office) with your phone.</li>
+              <li>Hold your phone in parallel to the ground with the display facing up.</li>
+              <li>Press the "START" button.</li>
+              <li>A 3-second countdown starts after which the 10-secound measurment will begin.</li>
+              <li>Spin as fast as you can.</li>
+              <li>Your average RPM (=rotations per minute) is displayed on the screen.</li>
+              <li>Check with your colloges who fast they can go.</li>
+            </ol>
+          </div>
+          <div class="mdc-dialog__actions">
+            <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">Got it</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-dialog__scrim"></div>
+    </div>
   </section>
   <script src="main.js"></script>
 </body>

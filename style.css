@@ -1,6 +1,8 @@
 html {
   font-family: "Montserrat", sans-serif;
   height: 100%;
+  --mdc-theme-primary: #304FFE !important;
+  --mdc-theme-secondary: #2196F3 !important;
 }
 
 body {
@@ -46,6 +48,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -58,6 +61,12 @@ body {
   color:#37474F;
   margin-left: 5px;
   font-size: 14px;
+}
+
+#helpFab{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 #mainNumber.countdown {
@@ -86,6 +95,11 @@ body {
 
   display: flex;
   align-items: center;
+}
+
+#resetButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @keyframes countdown{
