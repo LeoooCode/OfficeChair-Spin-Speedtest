@@ -106,6 +106,19 @@ body {
   margin-bottom: 20px;
 }
 
+.mdc-card__content{
+  padding: 0 15px;
+}
+
+.mdc-card__content h1{
+  display: flex;
+  align-items: center;
+}
+
+.mdc-card__content h1 .material-icons{
+  margin-right: 5px;
+}
+
 @keyframes countdown{
   0%{
     transform: scale(3);

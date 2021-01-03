@@ -53,11 +53,6 @@
 
     <div id="moreIndicator">More <span class="material-icons">expand_more</span></div>
 
-    <button class="mdc-fab" id="helpFab" aria-label="Help" onclick="helpDialog.open()">
-      <div class="mdc-fab__ripple"></div>
-      <span class="mdc-fab__icon">?</span>
-    </button>
-
     <div class="mdc-dialog" id="helpDialog">
       <div class="mdc-dialog__container">
         <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="help-dialog"
@@ -85,6 +80,67 @@
       <div class="mdc-dialog__scrim"></div>
     </div>
   </section>
+  <section class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <article class="mdc-card mdc-layout-grid__cell">
+        <div class="mdc-card__content">
+          <h1>
+            <span class="material-icons">sync_problem</span> Dizziness warning!
+          </h1>
+          <p>
+            Studies have shown that spinning a lot can cause dizziness.
+            Please don't handle any heavy machinery or nuclear weapon systems within the next 10 to 15 seconds after you
+            performed this test!
+          </p>
+        </div>
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <a class="mdc-button mdc-card__action mdc-card__action--button"
+              href="https://www.businessinsider.com/you-can-buy-a-nuclear-warhead-on-the-black-market-2015-8?r=DE&IR=T">
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">Purchase nuclear warhead</span>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="mdc-card mdc-layout-grid__cell">
+        <div class="mdc-card__content">
+          <h1>
+            <span class="material-icons">biotech</span> Science
+          </h1>
+          <p>
+            If you spin for long enough, the brain gets desensitised to the constant turn signals from your ear, and
+            adjusts to zero them out. Thus making you dizzy.</b>
+          </p>
+        </div>
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <a class="mdc-button mdc-card__action mdc-card__action--button"
+              href="https://www.sciencefocus.com/the-human-body/why-do-we-feel-dizzy-when-we-spin/">
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">Interesting</span>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="mdc-card mdc-layout-grid__cell">
+        <div class="mdc-card__content">
+          <h1>
+            <span class="material-icons">military_tech</span> Record
+          </h1>
+          <p>The current spinning record is at <i>512 rpm</i> and is heald by the russian <i>Mil Mi-24</i> attack
+            helicopter which indentifies itself as a human.</b>
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <button class="mdc-fab" id="helpFab" aria-label="Help" onclick="helpDialog.open()">
+    <div class="mdc-fab__ripple"></div>
+    <span class="mdc-fab__icon">?</span>
+  </button>
+
   <script src="main.js"></script>
 </body>
 
