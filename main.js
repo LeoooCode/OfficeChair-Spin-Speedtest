@@ -5,7 +5,7 @@ const mainNumber = document.getElementById("mainNumber");
 const mainNumberText = document.getElementById("mainNumberText");
 
 const GAME_TICK = 50;
-const TOTAL_TIME = 5000;
+const TOTAL_TIME = 15000;
 
 const DEFAULT_GAME_STATE = {
   running: false,
